@@ -37,7 +37,7 @@ contract Sberex {
     mapping(address => mapping(address => uint256)) public allowance;
 
     function Sberex () public {
-        uint256 _initialSupply = 10000000000000000000000000;
+        uint256 _initialSupply = 20102010000000000000000000;
         balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
     }
