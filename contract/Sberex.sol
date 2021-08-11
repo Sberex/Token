@@ -2,7 +2,20 @@
 
 pragma solidity ^0.4.2;
 
+library SafeMath {
+  function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+    assert(b <= a);
+    return a - b;
+  }
+  function add(uint256 a, uint256 b) internal pure returns (uint256 c) {
+    c = a + b;
+    assert(c >= a);
+    return c;
+  }
+}
+
 contract Sberex {
+    using SafeMath for uint256;
     string  public name = "Sberex";
     string  public symbol = "SBX";
     uint256 public totalSupply;
@@ -32,8 +45,8 @@ contract Sberex {
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
 
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
+        balanceOf[msg.sender] = balanceOf[msg.sender].sub(_value);
+        balanceOf[_to] = balanceOf[_to].add(_value);
 
         Transfer(msg.sender, _to, _value);
 
@@ -52,8 +65,8 @@ contract Sberex {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);
 
-        balanceOf[_from] -= _value;
-        balanceOf[_to] += _value;
+        balanceOf[_from] = balanceOf[_from].sub(_value);
+        balanceOf[_to] = balanceOf[_to].add(_value);
 
         allowance[_from][msg.sender] -= _value;
 
