@@ -42,7 +42,12 @@ contract Sberex {
         totalSupply = _initialSupply;
     }
 
-    function transfer(address _to, uint256 _value) public returns (bool success) {
+    modifier onlyPayloadSize(uint size) {
+        require(!(msg.data.length < size + 4));
+        _;
+    }
+
+    function transfer(address _to, uint256 _value) public onlyPayloadSize(2 * 32) returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
 
         balanceOf[msg.sender] = balanceOf[msg.sender].sub(_value);
@@ -53,7 +58,7 @@ contract Sberex {
         return true;
     }
 
-    function approve(address _spender, uint256 _value) public returns (bool success) {
+    function approve(address _spender, uint256 _value) public onlyPayloadSize(2 * 32) returns (bool success) {
         allowance[msg.sender][_spender] = _value;
 
         Approval(msg.sender, _spender, _value);
@@ -61,7 +66,7 @@ contract Sberex {
         return true;
     }
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+    function transferFrom(address _from, address _to, uint256 _value) public onlyPayloadSize(3 * 32) returns (bool success) {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);
 
