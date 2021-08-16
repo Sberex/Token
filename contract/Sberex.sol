@@ -17,7 +17,7 @@ library SafeMath {
 contract Sberex {
     using SafeMath for uint256;
     string  public name = "Sberex";
-    string  public symbol = "SBX";
+    string  public symbol = "SBEREX";
     uint256 public totalSupply;
     uint8   public decimals = 18;
 
