@@ -12,11 +12,11 @@ SBEREX token address:
 https://polygonscan.com/token/0x9f8b09395f2989f8b956c8b6530843cf1a32e216
 
 For Creativity Contract
-Metadata of "base64" was published successfully.
+Metadata of "creativity" was published successfully.
 contracts/Creativity.sol : 
-ipfs://QmUJvnz47JA4B5JvyJp1upCP9JQzQpRKARPy5WsGuveyAg
+ipfs://QmNdABfws3xBop3YJnVtZo1XC5J8jfU6EN2nG4hbJdLAhq
 
 metadata.json : 
-ipfs://QmZhfEBatoupyzzX3HDimbPVeUcCkNXrHPmcrWQntPetZS
+ipfs://QmYLRUzQ8YdQUzy7MzRKf8G1k4RvHKYYLQ4dtJaJ9naYWL
 
-https://polygonscan.com/address/0xb01ccb8440deae5bfaa3c1cebbc8090da455274b
+
