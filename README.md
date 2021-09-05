@@ -1,5 +1,5 @@
 # Token
-Sberex ERC20 Token with Governance functionality
+1) Sberex ERC20 Token with Governance functionality
 
 Metadata of "sberex" was published successfully.
 contracts/SberexVote.sol : 
@@ -11,7 +11,7 @@ ipfs://QmWCjGk5y7xf6J9vnjj9tv9dwJNTLXKrgMuvuoFwkkWdZi
 SBEREX token address:
 https://polygonscan.com/token/0x9f8b09395f2989f8b956c8b6530843cf1a32e216
 
-For Creativity Contract
+2) For Creativity Contract
 Metadata of "creativity" was published successfully.
 contracts/Creativity.sol : 
 ipfs://QmNdABfws3xBop3YJnVtZo1XC5J8jfU6EN2nG4hbJdLAhq
