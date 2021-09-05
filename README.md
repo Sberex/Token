@@ -19,4 +19,6 @@ ipfs://QmNdABfws3xBop3YJnVtZo1XC5J8jfU6EN2nG4hbJdLAhq
 metadata.json : 
 ipfs://QmYLRUzQ8YdQUzy7MzRKf8G1k4RvHKYYLQ4dtJaJ9naYWL
 
+https://polygonscan.com/address/0xaf25f3934a03d0116c7ff15140ddb8f7f3f0ea85#writeContract
+
 
