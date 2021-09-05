@@ -595,7 +595,7 @@ contract Creativity is ERC721 {
     }
     
     function summon(uint _class) external {
-        require(1 <= _class && _class <= 11);
+        require(0 <= _class && _class <= 31);
         uint _next_summoner = next_summoner;
         class[_next_summoner] = _class;
         level[_next_summoner] = 1;
@@ -636,7 +636,9 @@ contract Creativity is ERC721 {
     }
     
     function classes(uint id) public pure returns (string memory description) {
-        if (id == 1) {
+        if (id == 0) {
+            return "None";
+        } else if (id == 1) {
             return "Barbarian";
         } else if (id == 2) {
             return "Bard";
@@ -658,6 +660,46 @@ contract Creativity is ERC721 {
             return "Sorcerer";
         } else if (id == 11) {
             return "Wizard";
+        } else if (id == 12) {
+            return "Arcane Archer";
+        } else if (id == 13) {
+            return "Arcane Trickster";
+        } else if (id == 14) {
+            return "Archmage";
+        } else if (id == 15) {
+            return "Assassin";
+        } else if (id == 16) {
+            return "Blackguard";
+        } else if (id == 17) {
+            return "Dragon Disciple";
+        } else if (id == 18) {
+            return "Duelist";
+        } else if (id == 19) {
+            return "Dwarven Defender";
+        } else if (id == 20) {
+            return "Eldritch Knight";
+        } else if (id == 21) {
+            return "Hierophant";
+        } else if (id == 22) {
+            return "Horizon Walker";
+        } else if (id == 23) {
+            return "Loremaster";
+        } else if (id == 24) {
+            return "Mystic Theurge";
+        } else if (id == 25) {
+            return "Shadowdancer";
+        } else if (id == 26) {
+            return "Thaumaturgist";
+        } else if (id == 27) {
+            return "Adept";
+        } else if (id == 28) {
+            return "Aristocrat";
+        } else if (id == 29) {
+            return "Commoner";
+        } else if (id == 30) {
+            return "Expert";
+        } else if (id == 31) {
+            return "Warrior";
         }
     }
     
