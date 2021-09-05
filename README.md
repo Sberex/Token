@@ -23,15 +23,21 @@ https://polygonscan.com/address/0xaf25f3934a03d0116c7ff15140ddb8f7f3f0ea85#write
 
 Start with 8. summon and chose who you are:
 0 - "None";
+
 1 - "Barbarian";
+
 2 - "Bard";
+
 3 - "Cleric";
+
 4 - "Druid";
+
 5 - "Fighter";
+
 6 - "Monk";
+
 7 - "Paladin";
-        } else if (id == 8) {
-            return "Ranger";
+8 - "Ranger";
         } else if (id == 9) {
             return "Rogue";
         } else if (id == 10) {
