@@ -37,50 +37,51 @@ Start with 8. summon and chose who you are:
 6 - "Monk";
 
 7 - "Paladin";
+
 8 - "Ranger";
-        } else if (id == 9) {
-            return "Rogue";
-        } else if (id == 10) {
-            return "Sorcerer";
-        } else if (id == 11) {
-            return "Wizard";
-        } else if (id == 12) {
-            return "Arcane Archer";
-        } else if (id == 13) {
-            return "Arcane Trickster";
-        } else if (id == 14) {
-            return "Archmage";
-        } else if (id == 15) {
-            return "Assassin";
-        } else if (id == 16) {
-            return "Blackguard";
-        } else if (id == 17) {
-            return "Dragon Disciple";
-        } else if (id == 18) {
-            return "Duelist";
-        } else if (id == 19) {
-            return "Dwarven Defender";
-        } else if (id == 20) {
-            return "Eldritch Knight";
-        } else if (id == 21) {
-            return "Hierophant";
-        } else if (id == 22) {
-            return "Horizon Walker";
-        } else if (id == 23) {
-            return "Loremaster";
-        } else if (id == 24) {
-            return "Mystic Theurge";
-        } else if (id == 25) {
-            return "Shadowdancer";
-        } else if (id == 26) {
-            return "Thaumaturgist";
-        } else if (id == 27) {
-            return "Adept";
-        } else if (id == 28) {
-            return "Aristocrat";
-        } else if (id == 29) {
-            return "Commoner";
-        } else if (id == 30) {
-            return "Expert";
-        } else if (id == 31) {
-            return "Warrior";
+
+9 - "Rogue";
+
+10 - "Sorcerer";
+
+11 - "Wizard";
+
+12 - "Arcane Archer";
+
+13 - "Arcane Trickster";
+
+14 - "Archmage";
+
+15 - "Assassin";
+
+16 - "Blackguard";
+
+17 - "Dragon Disciple";
+
+18 - "Duelist";
+
+19 - "Dwarven Defender";
+
+20 - "Eldritch Knight";
+
+21 - "Hierophant";
+
+22 - "Horizon Walker";
+
+23 - "Loremaster";
+
+24 - "Mystic Theurge";
+
+25 - "Shadowdancer";
+
+26 - "Thaumaturgist";
+
+27 - "Adept";
+
+28 - "Aristocrat";
+
+29 - "Commoner";
+
+30 - "Expert";
+
+31 - "Warrior".
