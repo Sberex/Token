@@ -22,6 +22,7 @@ ipfs://QmYLRUzQ8YdQUzy7MzRKf8G1k4RvHKYYLQ4dtJaJ9naYWL
 https://polygonscan.com/address/0xaf25f3934a03d0116c7ff15140ddb8f7f3f0ea85#writeContract
 
 Start with 8. summon and chose who you are:
+
 0 - "None";
 
 1 - "Barbarian";
