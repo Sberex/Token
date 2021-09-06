@@ -88,6 +88,7 @@ Start with 8. summon and chose who you are:
 31 - "Warrior".
 
 3) For Creativity Gold Contract
+
 Metadata of "creativity_gold" was published successfully.
 contracts/Creativity_Gold.sol : 
 ipfs://QmX3euyxGxdDAeoymHE1iAujZmzMo7XwvyypJ5aTiLPYmv
