@@ -14,7 +14,7 @@ contract creativity_gold {
 
     uint public totalSupply = 0;
     
-    creativity constant rm = Creativity(0xaf25F3934A03D0116C7Ff15140DDB8F7f3F0Ea85);
+    creativity constant cm = Creativity(0xaf25F3934A03D0116C7Ff15140DDB8F7f3F0Ea85);
 
     mapping(uint => mapping (uint => uint)) public allowance;
     mapping(uint => uint) public balanceOf;
@@ -31,13 +31,13 @@ contract creativity_gold {
     }
 
     function _isApprovedOrOwner(uint _summoner) internal view returns (bool) {
-        return rm.getApproved(_summoner) == msg.sender || rm.ownerOf(_summoner) == msg.sender;
+        return cm.getApproved(_summoner) == msg.sender || cm.ownerOf(_summoner) == msg.sender;
     }
     
     
     function claimable(uint summoner) external view returns (uint amount) {
         require(_isApprovedOrOwner(summoner));
-        uint _current_level = rm.level(summoner);
+        uint _current_level = cm.level(summoner);
         uint _claimed_for = claimed[summoner]+1;
         for (uint i = _claimed_for; i <= _current_level; i++) {
             amount += wealth_by_level(i);
@@ -46,7 +46,7 @@ contract creativity_gold {
     
     function claim(uint summoner) external {
         require(_isApprovedOrOwner(summoner));
-        uint _current_level = rm.level(summoner);
+        uint _current_level = cm.level(summoner);
         uint _claimed_for = claimed[summoner]+1;
         for (uint i = _claimed_for; i <= _current_level; i++) {
             _mint(summoner, wealth_by_level(i));
