@@ -7,7 +7,7 @@ interface Creativity {
     function ownerOf(uint) external view returns (address);
 }
 
-contract rarity_attributes {
+contract creativity_attributes {
     
     uint constant POINT_BUY = 32;
     Creativity constant cm = Creativity(0xaf25F3934A03D0116C7Ff15140DDB8F7f3F0Ea85);
@@ -29,7 +29,7 @@ contract rarity_attributes {
     event Leveled(address indexed leveler, uint summoner, uint32 strength, uint32 dexterity, uint32 constitution, uint32 intelligence, uint32 wisdom, uint32 charisma);
     
     function _isApprovedOrOwner(uint _summoner) internal view returns (bool) {
-        return rm.getApproved(_summoner) == msg.sender || rm.ownerOf(_summoner) == msg.sender;
+        return cm.getApproved(_summoner) == msg.sender || cm.ownerOf(_summoner) == msg.sender;
     }
     
     function point_buy(uint _summoner, uint32 _str, uint32 _dex, uint32 _const, uint32 _int, uint32 _wis, uint32 _cha) external {
@@ -58,7 +58,7 @@ contract rarity_attributes {
         require(_isApprovedOrOwner(_summoner));
         require(character_created[_summoner]);
         uint _points_spent = level_points_spent[_summoner];
-        require(abilities_by_level(rm.level(_summoner)) - _points_spent > 0);
+        require(abilities_by_level(cm.level(_summoner)) - _points_spent > 0);
         level_points_spent[_summoner] = _points_spent+1;
     }
     
