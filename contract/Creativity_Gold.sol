@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.7;
 
-interface rarity {
+interface creativity {
     function level(uint) external view returns (uint);
     function getApproved(uint) external view returns (address);
     function ownerOf(uint) external view returns (address);
 }
 
-contract rarity_gold {
+contract creativity_gold {
     string public constant name = "Creativity Gold";
     string public constant symbol = "GOLD";
     uint8 public constant decimals = 18;
