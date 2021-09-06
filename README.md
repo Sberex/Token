@@ -86,3 +86,13 @@ Start with 8. summon and chose who you are:
 30 - "Expert";
 
 31 - "Warrior".
+
+3) For Creativity Gold Contract
+Metadata of "creativity_gold" was published successfully.
+contracts/Creativity_Gold.sol : 
+ipfs://QmX3euyxGxdDAeoymHE1iAujZmzMo7XwvyypJ5aTiLPYmv
+
+metadata.json : 
+ipfs://QmNupDpAmgVVvBomUFru8nMf4f1Xybz2KFFwtX8wqwFVkv
+
+https://polygonscan.com/address/0xc96185a65591c02c1459860cb17391804853fdb5
