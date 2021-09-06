@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.7;
 
-interface creativity {
+interface Creativity {
     function level(uint) external view returns (uint);
     function getApproved(uint) external view returns (address);
     function ownerOf(uint) external view returns (address);
@@ -14,7 +14,7 @@ contract creativity_gold {
 
     uint public totalSupply = 0;
     
-    creativity constant cm = Creativity(0xaf25F3934A03D0116C7Ff15140DDB8F7f3F0Ea85);
+    Creativity constant cm = Creativity(0xaf25F3934A03D0116C7Ff15140DDB8F7f3F0Ea85);
 
     mapping(uint => mapping (uint => uint)) public allowance;
     mapping(uint => uint) public balanceOf;
