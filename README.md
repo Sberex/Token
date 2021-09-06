@@ -97,3 +97,14 @@ metadata.json :
 ipfs://QmNupDpAmgVVvBomUFru8nMf4f1Xybz2KFFwtX8wqwFVkv
 
 https://polygonscan.com/address/0xc96185a65591c02c1459860cb17391804853fdb5
+
+4) For Creativity Attrbutes Contract
+
+Metadata of "creativity_attributes" was published successfully.
+contracts/Creativity_Attributes.sol : 
+ipfs://QmNT4sqB3UeUWRYC1dEwtdFRCEcHr2uUEdMaNcES2UmKdW
+
+metadata.json : 
+ipfs://QmQgjidKUKnKuUXZJNhy4nsw5qgiPYYKzydydSHj98QS1L
+
+https://polygonscan.com/address/0x4c9c5ce8cc6019a40cde42be193caf03dca540f4
